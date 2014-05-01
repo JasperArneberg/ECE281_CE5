@@ -33,6 +33,16 @@ MIPS Assembly Code:
 
 
 #Task 2
+Hand-assemble the program from Task 1.
+```
+MIPS Assembly Code:                             Machine Language:
+  addi $S1, $0, 0x002c # b = 44                   0x2011002c
+  addi $S2, $0, 0xffdb # c = -37                  0x2012ffdb
+  add $S0, $S1, $S2 # a = b + c                   0x02328020
+  sw $S0, 0x54 # write a to address x54           0xac100054
+```
+
+
 ###Signal Descriptions
 
 ###Waveform
