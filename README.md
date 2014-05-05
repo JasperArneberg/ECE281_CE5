@@ -46,7 +46,7 @@ MIPS Assembly Code:                             Machine Language:
 ###Signal Descriptions
 
 ###Waveform
-![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/screenshot.png?raw=true "Screenshot")
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/task1screenshot.png?raw=true "Task 2 Screenshot")
 
 #Task 3
 ###Waveform
