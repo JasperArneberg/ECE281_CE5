@@ -45,6 +45,8 @@ MIPS Assembly Code:                             Machine Language:
 
 ###Signal Descriptions
 
+This program appears to have worked as planned. As can be seen in the waveform below, the value of 7 is being written ot he x54 address. The value 7 is in the writedata signal, and the aluout signal has a value of x54.
+
 ###Waveform
 ![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/task1screenshot.png?raw=true "Task 2 Screenshot")
 
