@@ -86,11 +86,10 @@ MIPS Assembly Code:                             Machine Language:
 The hand compilations can all be seen below in this photograph:
 ![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/hand_compilation.jpg?raw=true "Hand Compilation")
 
-###Waveform
-![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/screenshot.png?raw=true "Screenshot")
+###Waveform Analysis
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/task3waveform.png?raw=true "Task 3 Waveform")
 
-
-### Analysis
+The ori operation appears to have worked. This operation compares the value of $S2, which was xffffffdb from before, and it compares it with the immediate value fo x000080000. The expected result of an or operation would be xffffffdb, which is exactly what we see in the aluout signal after 50 ns.
 
 #Documentation
 I got ideas for how to solve task 3 from Hamza El-Saawy, Brian Yarbrough, and Daniel Eichman.
