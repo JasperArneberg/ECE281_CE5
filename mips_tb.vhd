@@ -108,7 +108,10 @@ BEGIN
 		instr <= X"02328020";
 		wait for clk_period;
 		
-		instr <= X"ac100054";		
+		instr <= X"ac100054";
+		wait for clk_period;		
+
+		instr <= X"36538000";
       wait;
    end process;
 
