@@ -51,9 +51,15 @@ This program appears to have worked as planned. As can be seen in the waveform b
 ![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/task1screenshot.png?raw=true "Task 2 Screenshot")
 
 #Task 3
-###Waveform
-![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/screenshot.png?raw=true "Screenshot")
 
+### Modifications
+The datapath schematic was drawn for the ori command. No physical changes were necessary because the ALU is capable of performing or instructions.
+
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/datapath_schematic.jpg?raw=true "Datapath Schematic")
+
+The ALU decoder was changed so that it would execute the ori command. Here is the table with the summary of changes.
+
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/alu_decoder?raw=true "ALU decoder")
 
 The control signals were set for an ori command:
 ```
@@ -62,8 +68,14 @@ when "001101" => controls <= "101000010"; -- ori
 
 Below is the modification to extend the functionality of the ALU decoder:
 ```
-		when "11" => alucontrol <= "001"; -- or
+when "11" => alucontrol <= "001"; -- or
 ```
 
+###Waveform
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/screenshot.png?raw=true "Screenshot")
+
+
+### Analysis
+
 #Documentation
-None as of now.
+I got ideas for how to solve task 3 from Hamza El-Saawy, Brian Yarbrough, and Daniel Eichman.
