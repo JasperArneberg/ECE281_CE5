@@ -54,12 +54,16 @@ This program appears to have worked as planned. As can be seen in the waveform b
 ###Waveform
 ![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/screenshot.png?raw=true "Screenshot")
 
-#Demonstrations
-| Functionality | Witness | Date | Time |
-| :--: | :--: | :--: | :----: |
-| Task 1 | | | |
-| Task 2 | | | |
-| Task 3 | | | |
+
+The control signals were set for an ori command:
+```
+when "001101" => controls <= "101000010"; -- ori
+```
+
+Below is the modification to extend the functionality of the ALU decoder:
+```
+		when "11" => alucontrol <= "001"; -- or
+```
 
 #Documentation
 None as of now.
