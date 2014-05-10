@@ -59,7 +59,7 @@ The datapath schematic was drawn for the ori command. No physical changes were n
 
 The ALU decoder was changed so that it would execute the ori command. Here is the table with the summary of changes.
 
-![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/alu_decoder?raw=true "ALU decoder")
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/alu_decoder.jpg?raw=true "ALU decoder")
 
 The control signals were set for an ori command:
 ```
@@ -70,6 +70,21 @@ Below is the modification to extend the functionality of the ALU decoder:
 ```
 when "11" => alucontrol <= "001"; -- or
 ```
+
+### Testbench
+A new instruction was added to the testbench to see if the ori command would execute as expected.
+
+```
+MIPS Assembly Code:                             Machine Language:
+  addi $S1, $0, 0x002c # b = 44                   0x2011002c
+  addi $S2, $0, 0xffdb # c = -37                  0x2012ffdb
+  add $S0, $S1, $S2 # a = b + c                   0x02328020
+  sw $S0, 0x54 # write a to address x54           0xac100054
+  ori $S3, $S2, x80000                            0x36538000
+```
+
+The hand compilations can all be seen below in this photograph:
+![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/hand_compilation.jpg?raw=true "Hand Compilation")
 
 ###Waveform
 ![alt text](https://github.com/JasperArneberg/ECE281_CE5/blob/master/screenshot.png?raw=true "Screenshot")
